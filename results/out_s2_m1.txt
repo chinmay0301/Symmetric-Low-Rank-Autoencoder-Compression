@@ -1,0 +1,109 @@
+Using CUDA!
+AE(
+  (encoder_l1): MaskedLinear(in_features=784, out_features=128, bias=True)
+  (encoder_l2): MaskedLinear(in_features=128, out_features=64, bias=True)
+  (encoder_l3): MaskedLinear(in_features=64, out_features=32, bias=True)
+  (decoder_l1): MaskedLinear(in_features=32, out_features=64, bias=True)
+  (decoder_l2): MaskedLinear(in_features=64, out_features=128, bias=True)
+  (decoder_l3): MaskedLinear(in_features=128, out_features=784, bias=True)
+)
+Param name           Shape                          Type           
+----------------------------------------------------------------------
+encoder_l1.weight    torch.Size([128, 784])         torch.float32  
+encoder_l1.mask      torch.Size([128, 784])         torch.float32  
+encoder_l1.bias      torch.Size([128])              torch.float32  
+encoder_l2.weight    torch.Size([64, 128])          torch.float32  
+encoder_l2.mask      torch.Size([64, 128])          torch.float32  
+encoder_l2.bias      torch.Size([64])               torch.float32  
+encoder_l3.weight    torch.Size([32, 64])           torch.float32  
+encoder_l3.mask      torch.Size([32, 64])           torch.float32  
+encoder_l3.bias      torch.Size([32])               torch.float32  
+decoder_l1.weight    torch.Size([64, 32])           torch.float32  
+decoder_l1.mask      torch.Size([64, 32])           torch.float32  
+decoder_l1.bias      torch.Size([64])               torch.float32  
+decoder_l2.weight    torch.Size([128, 64])          torch.float32  
+decoder_l2.mask      torch.Size([128, 64])          torch.float32  
+decoder_l2.bias      torch.Size([128])              torch.float32  
+decoder_l3.weight    torch.Size([784, 128])         torch.float32  
+decoder_l3.mask      torch.Size([784, 128])         torch.float32  
+decoder_l3.bias      torch.Size([784])              torch.float32  
+--- Initial training ---
+invoking test_vae
+Test set: Average loss: 2.7528
+--- Before pruning ---
+encoder_l1.weight    | nonzeros =  100352 /  100352 (100.00%) | total_pruned =       0 | shape = (128, 784)
+encoder_l1.bias      | nonzeros =     128 /     128 (100.00%) | total_pruned =       0 | shape = (128,)
+encoder_l2.weight    | nonzeros =    8192 /    8192 (100.00%) | total_pruned =       0 | shape = (64, 128)
+encoder_l2.bias      | nonzeros =      64 /      64 (100.00%) | total_pruned =       0 | shape = (64,)
+encoder_l3.weight    | nonzeros =    2048 /    2048 (100.00%) | total_pruned =       0 | shape = (32, 64)
+encoder_l3.bias      | nonzeros =      32 /      32 (100.00%) | total_pruned =       0 | shape = (32,)
+decoder_l1.weight    | nonzeros =    2048 /    2048 (100.00%) | total_pruned =       0 | shape = (64, 32)
+decoder_l1.bias      | nonzeros =      64 /      64 (100.00%) | total_pruned =       0 | shape = (64,)
+decoder_l2.weight    | nonzeros =    8192 /    8192 (100.00%) | total_pruned =       0 | shape = (128, 64)
+decoder_l2.bias      | nonzeros =     128 /     128 (100.00%) | total_pruned =       0 | shape = (128,)
+decoder_l3.weight    | nonzeros =  100352 /  100352 (100.00%) | total_pruned =       0 | shape = (784, 128)
+decoder_l3.bias      | nonzeros =     784 /     784 (100.00%) | total_pruned =       0 | shape = (784,)
+alive: 222384, pruned : 0, total: 222384, Compression rate :       1.00x  (  0.00% pruned)
+Pruning with threshold : 0.05178427696228027 for layer encoder_l1
+Pruning with threshold : 0.1713820844888687 for layer encoder_l2
+Pruning with threshold : 0.23125869035720825 for layer encoder_l3
+Pruning with threshold : 0.24562282860279083 for layer decoder_l1
+Pruning with threshold : 0.15524250268936157 for layer decoder_l2
+Pruning with threshold : 0.05913439020514488 for layer decoder_l3
+invoking test_vae
+Test set: Average loss: 10.1260
+--- After pruning ---
+encoder_l1.weight    | nonzeros =    4981 /  100352 (  4.96%) | total_pruned =   95371 | shape = (128, 784)
+encoder_l1.bias      | nonzeros =     128 /     128 (100.00%) | total_pruned =       0 | shape = (128,)
+encoder_l2.weight    | nonzeros =     452 /    8192 (  5.52%) | total_pruned =    7740 | shape = (64, 128)
+encoder_l2.bias      | nonzeros =      64 /      64 (100.00%) | total_pruned =       0 | shape = (64,)
+encoder_l3.weight    | nonzeros =      84 /    2048 (  4.10%) | total_pruned =    1964 | shape = (32, 64)
+encoder_l3.bias      | nonzeros =      32 /      32 (100.00%) | total_pruned =       0 | shape = (32,)
+decoder_l1.weight    | nonzeros =      79 /    2048 (  3.86%) | total_pruned =    1969 | shape = (64, 32)
+decoder_l1.bias      | nonzeros =      64 /      64 (100.00%) | total_pruned =       0 | shape = (64,)
+decoder_l2.weight    | nonzeros =     350 /    8192 (  4.27%) | total_pruned =    7842 | shape = (128, 64)
+decoder_l2.bias      | nonzeros =     128 /     128 (100.00%) | total_pruned =       0 | shape = (128,)
+decoder_l3.weight    | nonzeros =    6709 /  100352 (  6.69%) | total_pruned =   93643 | shape = (784, 128)
+decoder_l3.bias      | nonzeros =     784 /     784 (100.00%) | total_pruned =       0 | shape = (784,)
+alive: 13855, pruned : 208529, total: 222384, Compression rate :      16.05x  ( 93.77% pruned)
+--- Retraining ---
+invoking test_vae
+Test set: Average loss: 4.0361
+--- After Retraining ---
+encoder_l1.weight    | nonzeros =    4981 /  100352 (  4.96%) | total_pruned =   95371 | shape = (128, 784)
+encoder_l1.bias      | nonzeros =     128 /     128 (100.00%) | total_pruned =       0 | shape = (128,)
+encoder_l2.weight    | nonzeros =     452 /    8192 (  5.52%) | total_pruned =    7740 | shape = (64, 128)
+encoder_l2.bias      | nonzeros =      64 /      64 (100.00%) | total_pruned =       0 | shape = (64,)
+encoder_l3.weight    | nonzeros =      84 /    2048 (  4.10%) | total_pruned =    1964 | shape = (32, 64)
+encoder_l3.bias      | nonzeros =      32 /      32 (100.00%) | total_pruned =       0 | shape = (32,)
+decoder_l1.weight    | nonzeros =      79 /    2048 (  3.86%) | total_pruned =    1969 | shape = (64, 32)
+decoder_l1.bias      | nonzeros =      64 /      64 (100.00%) | total_pruned =       0 | shape = (64,)
+decoder_l2.weight    | nonzeros =     350 /    8192 (  4.27%) | total_pruned =    7842 | shape = (128, 64)
+decoder_l2.bias      | nonzeros =     128 /     128 (100.00%) | total_pruned =       0 | shape = (128,)
+decoder_l3.weight    | nonzeros =    6709 /  100352 (  6.69%) | total_pruned =   93643 | shape = (784, 128)
+decoder_l3.bias      | nonzeros =     784 /     784 (100.00%) | total_pruned =       0 | shape = (784,)
+alive: 13855, pruned : 208529, total: 222384, Compression rate :      16.05x  ( 93.77% pruned)
+accuracy before weight sharing
+invoking test_vae
+10000
+Test set: Average loss: 4.0361
+accuacy after weight sharing
+invoking test_vae
+10000
+Test set: Average loss: 4.8474
+Layer           |   original compressed improvement percent
+----------------------------------------------------------------------
+encoder_l1.weight |      40364       9713       4.16x  24.06%
+encoder_l1.bias |       1540        672       2.29x  43.64%
+encoder_l2.weight |       3876       1143       3.39x  29.49%
+encoder_l2.bias |        772        336       2.30x  43.52%
+encoder_l3.weight |        764        452       1.69x  59.16%
+encoder_l3.bias |        388        172       2.26x  44.33%
+decoder_l1.weight |        764        472       1.62x  61.78%
+decoder_l1.bias |        772        336       2.30x  43.52%
+decoder_l2.weight |       3060       1132       2.70x  36.99%
+decoder_l2.bias |       1540        672       2.29x  43.64%
+decoder_l3.weight |      54188      12086       4.48x  22.30%
+decoder_l3.bias |       9412       3412       2.76x  36.25%
+----------------------------------------------------------------------
+total           |     117440      30598       3.84x  26.05%

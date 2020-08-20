@@ -1,0 +1,384 @@
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+7
+5
+4
+3
+11
+2
+4
+3
+3
+Rank selected for joint: r1, r2, r3 (7, 5, 4)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (3, 11, 2, 4, 3, 3)
+eps vals:  [0.8, 0.8, 0.8]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 9.8240
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 9.8531
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+36
+13
+11
+7
+54
+5
+24
+6
+7
+Rank selected for joint: r1, r2, r3 (36, 13, 11)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (7, 54, 5, 24, 6, 7)
+eps vals:  [0.5, 0.5, 0.5]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 7.0495
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 6.3978
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+129
+65
+34
+16
+136
+7
+69
+13
+27
+Rank selected for joint: r1, r2, r3 (129, 65, 34)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (16, 136, 7, 69, 13, 27)
+eps vals:  [0.2, 0.2, 0.2]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.5202
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.4875
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+183
+92
+56
+24
+180
+8
+90
+28
+38
+Rank selected for joint: r1, r2, r3 (183, 92, 56)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (24, 180, 8, 90, 28, 38)
+eps vals:  [0.1, 0.1, 0.1]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3443
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3233
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+183
+109
+56
+24
+180
+15
+101
+28
+38
+Rank selected for joint: r1, r2, r3 (183, 109, 56)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (24, 180, 15, 101, 28, 38)
+eps vals:  [0.1, 0.05, 0.1]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3338
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3199
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+224
+109
+73
+38
+211
+15
+101
+38
+45
+Rank selected for joint: r1, r2, r3 (224, 109, 73)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (38, 211, 15, 101, 38, 45)
+eps vals:  [0.05, 0.05, 0.05]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2669
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2297
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+183
+109
+56
+24
+180
+15
+101
+28
+38
+Rank selected for joint: r1, r2, r3 (183, 109, 56)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (24, 180, 15, 101, 28, 38)
+eps vals:  [0.1, 0.05, 0.1]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3338
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3199
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+183
+109
+73
+24
+180
+15
+101
+38
+45
+Rank selected for joint: r1, r2, r3 (183, 109, 73)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (24, 180, 15, 101, 38, 45)
+eps vals:  [0.1, 0.05, 0.05]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3332
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.3197
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+369
+219
+109
+195
+249
+118
+116
+55
+56
+Rank selected for joint: r1, r2, r3 (369, 219, 109)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (195, 249, 118, 116, 55, 56)
+eps vals:  [0.001, 0.001, 0.001]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2170
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+369
+92
+73
+195
+249
+8
+90
+38
+45
+Rank selected for joint: r1, r2, r3 (369, 92, 73)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (195, 249, 8, 90, 38, 45)
+eps vals:  [0.001, 0.1, 0.05]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2275
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2205
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+369
+109
+56
+195
+249
+15
+101
+28
+38
+Rank selected for joint: r1, r2, r3 (369, 109, 56)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (195, 249, 15, 101, 28, 38)
+eps vals:  [0.001, 0.05, 0.1]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2180
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2178
+invoking test_vae
+Test set: Average loss: 10.1576
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+369
+161
+109
+195
+249
+81
+111
+55
+56
+Rank selected for joint: r1, r2, r3 (369, 161, 109)
+Rank selected for Ind: (r_enc_1, r_dec_1) , (r_enc_2, r_dec_2), (r_enc_3, r_dec_3) (195, 249, 81, 111, 55, 56)
+eps vals:  [0.001, 0.01, 0.001]
+original model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+joint compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2170
+Individually compressed model error:
+invoking test_vae
+Test set: Average loss: 4.2169
+invoking test_vae
+Test set: Average loss: 10.1576

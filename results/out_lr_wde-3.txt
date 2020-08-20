@@ -1,0 +1,144 @@
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.8, 0.8, 0.8]
+true_model_params: 483328.000,joint compression: ,38.141x, ind compression: , 4.420x
+acc_org: 4.217,acc_ind_comp: ,5.306, acc_joint_comp: , 9.824, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.5, 0.5, 0.5]
+true_model_params: 483328.000,joint compression: ,8.602x, ind compression: , 2.860x
+acc_org: 4.217,acc_ind_comp: ,4.579, acc_joint_comp: , 7.049, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.2, 0.2, 0.2]
+true_model_params: 483328.000,joint compression: ,2.308x, ind compression: , 1.839x
+acc_org: 4.217,acc_ind_comp: ,4.323, acc_joint_comp: , 4.520, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.1, 0.1, 0.1]
+true_model_params: 483328.000,joint compression: ,1.617x, ind compression: , 1.511x
+acc_org: 4.217,acc_ind_comp: ,4.230, acc_joint_comp: , 4.344, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.1, 0.05, 0.1]
+true_model_params: 483328.000,joint compression: ,1.571x, ind compression: , 1.448x
+acc_org: 4.217,acc_ind_comp: ,4.229, acc_joint_comp: , 4.334, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.05, 0.05, 0.05]
+true_model_params: 483328.000,joint compression: ,1.323x, ind compression: , 1.292x
+acc_org: 4.217,acc_ind_comp: ,4.220, acc_joint_comp: , 4.267, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.1, 0.05, 0.1]
+true_model_params: 483328.000,joint compression: ,1.571x, ind compression: , 1.448x
+acc_org: 4.217,acc_ind_comp: ,4.229, acc_joint_comp: , 4.334, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.1, 0.05, 0.05]
+true_model_params: 483328.000,joint compression: ,1.549x, ind compression: , 1.440x
+acc_org: 4.217,acc_ind_comp: ,4.229, acc_joint_comp: , 4.333, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.001, 0.001, 0.001]
+true_model_params: 483328.000,joint compression: ,0.781x, ind compression: , 0.799x
+acc_org: 4.217,acc_ind_comp: ,4.217, acc_joint_comp: , 4.217, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.001, 0.1, 0.05]
+true_model_params: 483328.000,joint compression: ,0.888x, ind compression: , 0.871x
+acc_org: 4.217,acc_ind_comp: ,4.218, acc_joint_comp: , 4.227, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.001, 0.05, 0.1]
+true_model_params: 483328.000,joint compression: ,0.881x, ind compression: , 0.853x
+acc_org: 4.217,acc_ind_comp: ,4.217, acc_joint_comp: , 4.218, acc_random: ,  10.158
+Using CUDA!
+AE(
+  (encoder_l1): Linear(in_features=784, out_features=256, bias=True)
+  (encoder_l2): Linear(in_features=256, out_features=128, bias=True)
+  (encoder_l3): Linear(in_features=128, out_features=64, bias=True)
+  (decoder_l3): Linear(in_features=64, out_features=128, bias=True)
+  (decoder_l2): Linear(in_features=128, out_features=256, bias=True)
+  (decoder_l1): Linear(in_features=256, out_features=784, bias=True)
+)
+eps vals:  [0.001, 0.01, 0.001]
+true_model_params: 483328.000,joint compression: ,0.820x, ind compression: , 0.811x
+acc_org: 4.217,acc_ind_comp: ,4.217, acc_joint_comp: , 4.217, acc_random: ,  10.158
